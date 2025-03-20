@@ -8,5 +8,8 @@ int main() {
     if(N<0){
         cout<<N<<"\n"<<"minus";
     }
+    else{
+        cout<<N;
+    }
     return 0;
 }

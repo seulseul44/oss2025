@@ -16,9 +16,9 @@ int main() {
     cin >> info.secret_code >> info.meeting_point >> info.time;
 
     // 출력
-    cout << "secret code: " << info.secret_code << endl;
-    cout << "meeting point: " << info.meeting_point << endl;
-    cout << "time: " << info.time << endl;
+    cout << "secret code : " << info.secret_code << endl;
+    cout << "meeting point : " << info.meeting_point << endl;
+    cout << "time : " << info.time << endl;
 
     return 0;
 }

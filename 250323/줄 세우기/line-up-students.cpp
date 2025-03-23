@@ -29,7 +29,7 @@ int main() {
     });
 
     for (int i = 0; i < N; i++) {
-        cout << students[i].number << " " << students[i].height << " " << students[i].weight << endl;
+        cout << students[i].height << " " << students[i].weight << " " << students[i].number << endl;
     }
 
     return 0;

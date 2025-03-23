@@ -15,9 +15,9 @@ int main() {
     sort(word2.begin(), word2.end());
 
     if (word1 == word2) {
-        cout << "yes";
+        cout << "Yes";
     } else {
-        cout << "no";
+        cout << "No";
     }
 
     return 0;

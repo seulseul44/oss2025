@@ -21,7 +21,7 @@ int main() {
 
     // 정렬된 순서에 맞게 원래 위치를 출력
     for (int i = 0; i < N; i++) {
-        cout << indexed_sequence[i].second << " ";
+        cout << indexed_sequence[i].second << " ";  // 원래 위치 출력
     }
 
     return 0;

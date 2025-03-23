@@ -14,6 +14,8 @@ int main() {
     priority_queue<int> max_heap; // 최대 힙 (중앙값보다 작은 값들)
     priority_queue<int, vector<int>, greater<int>> min_heap; // 최소 힙 (중앙값보다 큰 값들)
 
+    bool first = true; // 첫 번째 출력을 제어하는 변수
+
     for (int i = 0; i < n; i++) {
         cin >> arr[i];
 
@@ -36,9 +38,16 @@ int main() {
 
         // 홀수 번째 원소에 대해서 중앙값 출력
         if ((i + 1) % 2 == 1) {
-            cout << max_heap.top() << endl; // 중앙값은 최대 힙의 top
+            if (first) {
+                cout << max_heap.top(); // 중앙값은 최대 힙의 top
+                first = false;
+            } else {
+                cout << " " << max_heap.top(); // 두 번째 이후부터는 공백을 추가
+            }
         }
     }
+
+    cout << endl; // 마지막에 줄 바꿈
 
     return 0;
 }

@@ -11,18 +11,20 @@ int main() {
     cin >> N;
     vector<pair<int, int>> indexed_sequence(N);
 
+    // 원소와 그 원소의 원래 위치 저장
     for (int i = 0; i < N; i++) {
         cin >> sequence[i];
-        indexed_sequence[i] = {sequence[i], i + 1};  // (원소, 원래 위치)
+        indexed_sequence[i] = {sequence[i], i + 1};  // (값, 원래 인덱스)
     }
 
-    // 오름차순으로 정렬 (첫 번째 원소를 기준으로 정렬)
+    // 값 기준으로 오름차순 정렬
     sort(indexed_sequence.begin(), indexed_sequence.end());
 
-    // 정렬된 순서에 맞게 원래 위치를 출력
+    // 원래 위치 출력
     for (int i = 0; i < N; i++) {
-        cout << indexed_sequence[i].second << " ";  // 원래 위치 출력
+        cout << indexed_sequence[i].second << " ";  // 원래의 인덱스 출력
     }
 
     return 0;
 }
+

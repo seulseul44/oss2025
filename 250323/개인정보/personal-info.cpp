@@ -3,10 +3,6 @@
 
 using namespace std;
 
-string name[5];
-int height[5];
-double weight[5];
-
 struct Person {
     string name;
     int height;

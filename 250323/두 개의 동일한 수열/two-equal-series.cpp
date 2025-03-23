@@ -28,7 +28,7 @@ int main() {
         }
     }
 
-    cout << (isSame ? "yes" : "no");
+    cout << (isSame ? "Yes" : "No");
 
     return 0;
 }

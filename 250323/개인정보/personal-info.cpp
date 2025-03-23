@@ -30,6 +30,8 @@ int main() {
         cout << people[i].name << " " << people[i].height << " " << people[i].weight << endl;
     }
 
+    cout << endl;  // 중간에 빈 줄 추가
+
     cout << "height" << endl;
     sort(people, people + 5, compareByHeight);
     for (int i = 0; i < 5; i++) {

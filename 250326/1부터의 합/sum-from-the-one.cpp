@@ -16,7 +16,7 @@ int main() {
         lastNumber = i;  // 마지막으로 더한 숫자 저장
     }
 
-    cout << lastNumber << endl;  // 개행 추가
+    cout << lastNumber;  // 개행 추가
     return 0;
 }
 

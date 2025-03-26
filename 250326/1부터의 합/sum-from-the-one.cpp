@@ -2,21 +2,21 @@
 using namespace std;
 
 int main() {
-    int N = 0;
+    int N;
     cin >> N;
     
     int sum = 0;
-    int lastNumber = 0;  // 마지막으로 더한 숫자를 저장할 변수
+    int lastNumber = 0;
 
-    for (int i = 1; ; i++) {  // 무한 루프, 조건은 내부에서 처리
-        if (sum > N) {
-            break;  // 합이 N보다 커지면 반복문 종료
+    for (int i = 1; ; i++) {  // i를 1부터 시작 (0에서 시작하면 의미 없음)
+        sum += i;  // i를 더하기
+        if (sum > N) {  
+            lastNumber = i;  // 마지막으로 더한 수 저장
+            break;  // 합이 N보다 커지면 종료
         }
-
-        lastNumber = i;  // 마지막으로 더한 숫자 저장
-        sum += i;  // 합 누적
     }
 
-    cout << lastNumber;  // 마지막으로 더한 숫자 출력
+    cout << lastNumber << endl;  // 마지막으로 더한 숫자 출력
     return 0;
 }
+

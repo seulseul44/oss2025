@@ -6,9 +6,9 @@ using namespace std;
 int main() {
     int N;
     cin >> N;
-    
+
     vector<int> arr;
-    
+
     for (int i = 0; i < N; i++) {
         string command;
         cin >> command;
@@ -16,22 +16,25 @@ int main() {
         if (command == "push_back") {
             int x;
             cin >> x;
-            arr.push_back(x);  // 맨 뒤에 추가
+            arr.push_back(x);  
         } 
         else if (command == "pop_back") {
             if (!arr.empty()) {
-                arr.pop_back();  // 맨 뒤 삭제
+                arr.pop_back();  
             }
         } 
         else if (command == "size") {
-            cout << arr.size() << "\n";  // 배열 크기 출력
+            cout << arr.size() << "\n";  
         } 
         else if (command == "get") {
             int k;
             cin >> k;
-            cout << arr[k] << "\n";  // k번째 원소 출력
+            if (k > 0 && k <= arr.size()) { // **k번째 값이므로 1-based index 고려**
+                cout << arr[k - 1] << "\n";  
+            }
         }
     }
 
     return 0;
 }
+

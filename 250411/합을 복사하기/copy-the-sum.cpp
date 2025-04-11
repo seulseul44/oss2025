@@ -9,7 +9,7 @@ int main() {
     int sum=0;
     sum=a+b+c;
     a=sum;
-    c=sum;
+    b=sum;
     c=sum;
 
     cout<<a<<" "<<b<<" "<<c;

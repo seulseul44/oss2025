@@ -11,14 +11,14 @@ int main() {
     else if(a=='C'){
         cout<<"Usually";
     }
-    else if(a=='Z'){
-        cout<<"Failure";
-    }
     else if(a=='B'){
         cout<<"Good";
     }
     else if(a=='D'){
         cout<<"Effort";
+    }
+    else {
+        cout<<"Failure";
     }
     return 0;
 }

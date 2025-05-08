@@ -8,6 +8,9 @@ int main() {
     if(a=='S'){
         cout<<"Superior";
     }
+    else if(a=='A'){
+        cout<<"Excellent";
+    }
     else if(a=='C'){
         cout<<"Usually";
     }

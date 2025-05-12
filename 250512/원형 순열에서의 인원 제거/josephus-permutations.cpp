@@ -12,7 +12,7 @@ int main() {
         q.push(i);
     }
 
-    cout << "<";
+    cout << "";
     while (!q.empty()) {
         for (int i = 1; i < K; ++i) {
             q.push(q.front());
@@ -20,9 +20,9 @@ int main() {
         }
         cout << q.front();
         q.pop();
-        if (!q.empty()) cout << ", ";
+        if (!q.empty()) cout << " ";
     }
-    cout << ">\n";
+    cout << "\n";
 
     return 0;
 }

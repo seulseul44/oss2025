@@ -13,8 +13,7 @@ int main() {
         }
 
     for(int i=0;i<5;i++){
-        if(arr[i]%3!
-        =0){
+        if(arr[i]%3!=0){
             sat=true;
         }
     }
